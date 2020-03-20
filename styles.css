@@ -1,0 +1,924 @@
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, footer, header, nav, section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+figcaption, figure, main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: inherit
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details, menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: '';
+    clear: both;
+    height: 0;
+}
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Stripping */
+
+html, body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* setting root font-size */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Setting body default font-size */
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+strike {
+    color: darkgray;
+}
+
+/* wrapper */
+
+.wrapper {
+    max-width: 1140px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* *********Header Styling Starts************** */
+
+header {
+    height: 100vh;
+    background-image: url("./assets/main-image-1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.logo img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, button {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.topHeader {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.topHeader nav {
+    width: 100%;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: calc(0.8rem + 0.5vw);
+    flex-wrap: nowrap;
+}
+
+.headerLinks li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in;
+}
+
+.headerLinks li a:hover, .headerLinks li a:focus {
+    border-bottom: 2px solid #eeb013;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.headerContent p {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: calc(2.5rem + 1vw);
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 5px 35px;
+}
+
+.heading {
+    margin: 10px 0 40px 0;
+}
+
+.discoverButton {
+    width: 115px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all 0.3s ease-in;
+}
+
+.discoverButton:focus, .discoverButton:hover {
+    border-color: #eeb013;
+    color: #eeb013
+}
+
+/* *********Main Styling Starts************** */
+
+/* Section One Starts */
+
+.flexGallery {
+    display: flex;
+}
+
+.imageContainer {
+    margin: 2%;
+    width: calc((100%/3) - 4%);
+    position: relative;
+}
+
+.imageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(0.8rem + 0.5vw);
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    width: 80%;
+    overflow-wrap: break-word;
+}
+
+.imageTwoText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    width: 80%;
+}
+
+.imageTwoText h3 {
+    font-size: calc(1rem + 0.5vw);
+}
+
+.imageTwoText h2 {
+    font-size: calc(3.2rem + 0.5vw);
+}
+
+/* Section Two Starts */
+
+.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTwo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.5rem + 0.5vw);
+    border: 2px solid #e4e4e4;
+    display: inline-block;
+    margin: 45px auto;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: #141414;
+}
+
+.sectionTwo nav {
+    width: 70%;
+}
+
+.sectionTwo nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+
+.sectionTwo nav ul li a {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+.sectionTwo nav ul li a:hover, .sectionTwo nav ul li a:focus {
+    color: #eeb013;
+}
+
+.sectionTwo nav ul li a:hover::before, .sectionTwo nav ul li a:focus::before {
+    content: url("./assets/diamond.svg");
+    width: 10px;
+    position: absolute;
+    top: 30px;
+    left: 45%;
+}
+
+/* Section Three Starts */
+
+.flexGalleryTwo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageContainerTwo {
+    margin: 2%;
+    width: calc((100%/4) - 4%);
+    position: relative;
+}
+
+.imageContainerTwo p {
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
+    letter-spacing: 2px;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: bold;
+    margin: 8px auto;
+    text-transform: uppercase;
+}
+
+.newText {
+    border: 2px solid #141414;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* Section Four Starts */
+
+.sectionFour {
+    margin-top: 50px;
+    background-image: url(./assets/main-image-2.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+}
+
+.textContainer {
+    position: relative;
+    top: 15%;
+    left: 55%;
+}
+
+.textContainer h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
+    width: 32%;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+.textContainer p:nth-of-type(2) {
+    color: #eeb013;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.freeShipping {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.shoppingNow {
+    background: #eeb013;
+    padding: 15px;
+    color: #141414;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.textContainer h3, p, button {
+    margin: 15px auto;
+}
+
+/* Section Fifth Starts */
+
+.sectionFive {
+    background-image: url(./assets/main-image-3.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+}
+
+.textContainerTwo {
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+
+.textContainerTwo h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
+    width: 32%;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+.shoppingNow {
+    background: #eeb013;
+    padding: 15px;
+    color: #141414;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.textContainerTwo h3, p, button {
+    margin: 15px auto;
+}
+
+/* Section Sixth Starts */
+
+.sectionSix {
+    padding: 50px;
+}
+
+.sectionSix nav ul {
+    display: flex;
+}
+
+.sectionSix nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.fa-whatsapp, .fa-magic, .fa-smile {
+    font-size: 3rem;
+    border: 2px solid #141414;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+.sectionSix nav ul li p:nth-of-type(1) {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.sectionSix nav ul li p:nth-of-type(2) {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+}
+
+/* Section Seventh Starts */
+
+.sectionSeven nav ul {
+    display: flex;
+}
+
+/* Section Eighth Starts */
+
+.sectionEight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.sectionEight h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1.5rem + 0.5vw);
+    border: 2px solid #e4e4e4;
+    display: inline-block;
+    margin: 45px auto;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: #141414;
+}
+
+.sectionEight nav {
+    width: 100%;
+}
+
+.sectionEight nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Section Footer Starts */
+
+footer {
+    background-color: #141414;
+    padding: 50px;
+}
+
+.creativeAgency {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    margin: 5%;
+    width: calc((100%/4) - 10%);
+}
+
+.orangeHeading {
+    color: #eeb013;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.greyParagraph {
+    margin: 20px auto;
+    color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footerLogo {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.simpleHeading {
+    font-family: 'Montserrat', sans-serif;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    display: inline-block;
+    padding-bottom: 7px;
+    position: relative;
+}
+
+.simpleHeading::after {
+    background-color: #eeb013;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 15px;
+}
+
+.linksNav {
+    height: 100%;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.footerLinks li a {
+    color: #3f3f3f;
+    padding: 5px 5px 5px 0;
+    white-space: nowrap;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+
+.footerLinks li a:hover, .footerLinks li a:focus {
+    color: #eeb013;
+}
+
+.twitterPost {
+    font-size: 1rem;
+    color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.instagramImages {
+    margin: 4%;
+    width: calc((100%/3) - 8%);
+}
+
+.instagramImages img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.socialMedia nav {
+    width: 100%;
+}
+
+.socialMedia nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialMedia nav ul li {
+    margin: 0 20px;
+}
+
+.socialMedia nav ul li a {
+    font-size: 1.5rem;
+    color: #3f3f3f;
+    padding: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.socialMedia nav ul li a:hover, .socialMedia nav ul li a:focus {
+    color: #eeb013;
+}
+
+/* For Tablets */
+
+@media (max-width:768px) {
+    .topHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionFour {
+        background-position-x: 40%;
+    }
+    .sectionFive {
+        background-position-x: 60%;
+    }
+    .headerLinks {
+        margin: 10px auto;
+    }
+    .imageContainerTwo {
+        margin: 2%;
+        width: calc((100%/2) - 4%);
+        position: relative;
+    }
+}
+
+/* For Mobile Phones */
+
+@media (max-width:480px) {
+    header {
+        background-position-x: 60%;
+    }
+    .topHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+    }
+    .headerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .headerLinks li {
+        margin: 10px 0;
+    }
+    .flexGallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imageContainer {
+        margin: 2%;
+        width: 100%;
+        position: relative;
+    }
+    .sectionTwo h2 {
+        margin: 30px auto 10px auto;
+    }
+    .sectionTwo nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTwo nav ul li {
+        margin: 10px 0;
+    }
+    .sectionFour {
+        position: relative;
+    }
+
+    .textContainer {
+        position: absolute;
+        top: 10%;
+        left: 52%;
+    }
+    .textContainer h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 15px 0 15px 20px;
+    }
+    .textContainer p:nth-of-type(2) {
+        padding-left: 45px;
+    }
+    .sectionSeven nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionEight {
+        margin-top: 20px;
+    }
+    .sectionEight nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .sectionEight nav ul li {
+        margin: 8px 0;
+    }
+    .creativeAgency {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        margin: 5%;
+        width: 100%;
+    }
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footerLinks li {
+        margin: 5px 0;
+    }
+}
